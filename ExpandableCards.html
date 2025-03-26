@@ -12,13 +12,13 @@
         <p class="highlight">YAY! It's BOGO</p>
 
         <div class="price-box expanded" data-id="1" onclick="toggleExpand(this)">
-            <div class="d-flex" >
-
-            <label class="radio-container">
-                <input type="radio" name="unit" checked>
-                <span class="checkmark"></span>
-            </label>
-            <p class="ms-2">1 Unit - <span class="highlight">$10.00 USD</span></p>
+            
+            <div class="d-flex align-items-center position-relative">
+                <label class="radio-container">
+                    <input type="radio" name="unit" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <p class="ms-2">1 Unit <span class="badge discount">10% Off</span> - <span class="highlight">$10.00 USD</span></p>
             </div>
             <small>Standard Price</small>
             <div class="details" style="display: block;">
@@ -28,13 +28,19 @@
         </div>
 
         <div class="price-box" data-id="2" onclick="toggleExpand(this)">
-            <div class="d-flex" >
-
+            <div class="position-relative">
+                <span class="most-popular">MOST POPULAR</span>
+            </div>
+            <div class="d-flex align-items-center position-relative">
                 <label class="radio-container">
                     <input type="radio" name="unit">
                     <span class="checkmark"></span>
                 </label>
-                <p class="ms-2">2 Units - <span class="highlight">$18.00 USD</span> <br> <small>Most Popular</small></p>
+                <p class="ms-2">2 Units <span class="badge discount">20% Off</span> - <span class="highlight">$18.00 USD</span></p>
+            </div>
+            <div class="details">
+                <label>Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Black</option><option>White</option></select></label>
             </div>
             <div class="details">
                 <label>Size: <select><option>S</option><option>M</option><option>L</option></select></label>
@@ -43,13 +49,20 @@
         </div>
 
         <div class="price-box" data-id="3" onclick="toggleExpand(this)">
-            <div class="d-flex" >
-
-            <label class="radio-container">
-                <input type="radio" name="unit">
-                <span class="checkmark"></span>
-            </label>
-            <p class="ms-2">3 Units - <span class="highlight">$24.00 USD</span></p>
+            <div class="d-flex align-items-center position-relative">
+                <label class="radio-container">
+                    <input type="radio" name="unit">
+                    <span class="checkmark"></span>
+                </label>
+                <p class="ms-2">3 Units <span class="badge discount">30% Off</span> - <span class="highlight">$24.00 USD</span></p>
+            </div>
+            <div class="details">
+                <label>Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Black</option><option>White</option></select></label>
+            </div>
+            <div class="details">
+                <label>Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Black</option><option>White</option></select></label>
             </div>
             <div class="details">
                 <label>Size: <select><option>S</option><option>M</option><option>L</option></select></label>
@@ -57,9 +70,18 @@
             </div>
         </div>
 
-        <button class="btn">Add to Cart</button>
+        <div >
+            <div class="row ">
+                
+                <p class="col-5 freeDelivery">Free Delivery </p>
+                <p class="col-7">Total: <span id="total-price">$10.00 USD</span></p>
+
+            </div>
+          
+        </div>
+
+        <button class="btn"> + Add to Cart</button>
     </div>
     <script src="ExpandableCards.js"></script>
-
 </body>
 </html>

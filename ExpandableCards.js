@@ -1,3 +1,10 @@
+function updateTotal() {
+    const expandedCard = document.querySelector('.price-box.expanded');
+    if (expandedCard) {
+        const priceText = expandedCard.querySelector('.highlight').textContent;
+        document.getElementById('total-price').textContent = priceText;
+    }
+}
 function toggleExpand(selectedBox) {
     document.querySelectorAll(".price-box").forEach((box, index) => {
         let details = box.querySelector(".details");
@@ -13,4 +20,5 @@ function toggleExpand(selectedBox) {
             radio.checked = false;
         }
     });
+    updateTotal();
 }
