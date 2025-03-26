@@ -72,8 +72,6 @@ body {
 .radio-container input:checked + .checkmark::after {
     display: block;
 }
-
-/* Discount Badge */
 .badge.discount {
     background-color: #FF6B82;
     color: white;
@@ -82,8 +80,6 @@ body {
     border-radius: 5px;
     margin-left: 5px;
 }
-
-/* Most Popular Tag */
 .most-popular {
     position: absolute;
     top: -25px;
@@ -95,7 +91,6 @@ body {
     border-radius: 3px;
     font-weight: bold;
 }
-
 .freeDelivery{
     color: #FF6B82;
 
